@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.makaota.myshoppal.R
 import com.makaota.myshoppal.models.SoldProduct
 import com.makaota.myshoppal.ui.activities.ProductDetailsActivity
+import com.makaota.myshoppal.ui.activities.SoldProductDetailsActivity
 import com.makaota.myshoppal.utils.Constants
 import com.makaota.myshoppal.utils.GlideLoader
 import kotlinx.android.synthetic.main.item_list_layout.view.*
@@ -66,9 +67,9 @@ open class SoldProductsListAdapter(
 
             holder.itemView.setOnClickListener {
                 // Launch Product details screen.
-                val intent = Intent(context, ProductDetailsActivity::class.java)
-                intent.putExtra(Constants.EXTRA_PRODUCT_ID, model)
-               // intent.putExtra(Constants.EXTRA_PRODUCT_OWNER_ID, model.user_id)
+                val intent = Intent(context, SoldProductDetailsActivity::class.java)
+                intent.putExtra(Constants.EXTRA_SOLD_PRODUCT_DETAILS, model)
+                //intent.putExtra(Constants.EXTRA_PRODUCT_OWNER_ID, model.user_id)
                 context.startActivity(intent)
             }
         }

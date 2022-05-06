@@ -32,8 +32,7 @@ class SoldProductDetailsActivity : BaseActivity() {
         var productDetails: SoldProduct = SoldProduct()
 
         if (intent.hasExtra(Constants.EXTRA_SOLD_PRODUCT_DETAILS)) {
-            productDetails =
-                intent.getParcelableExtra<SoldProduct>(Constants.EXTRA_SOLD_PRODUCT_DETAILS)!!
+            productDetails = intent.getParcelableExtra<SoldProduct>(Constants.EXTRA_SOLD_PRODUCT_DETAILS)!!
         }
         // END
         // Call the function to setup action bar.
