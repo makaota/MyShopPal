@@ -10,7 +10,7 @@ class ForgotPasswordActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_forgot_password)
-        setupActionBar()
+        //setupActionBar()
 
         // In this screen there is only a one input field so we will not create the separate function what we have done in the Register and Login Screens.
         // I will show you how to perform all the operations in the on click function it self.
